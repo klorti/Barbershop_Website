@@ -310,7 +310,7 @@ body {
     font-size: 14px;
 }
 /* --- Responsive --- */
-@media (max-widgth: 900px) {
+@media (max-width: 900px) {
     .hero-inner {
         grid-template-columns: 1fr;
     }
