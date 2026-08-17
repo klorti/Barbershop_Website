@@ -12,6 +12,8 @@ const callBtn = document.getElementById("callBtn");
 const phoneLink = document.getElementById("phoneLink");
 const heading = document.getElementById("heroHeading");
 const featureGrid = document.getElementById("featureGrid");
+const nav = document.getElementById("nav");
+const siteHeader = document.querySelector(".site-header");
 
 // --- Services Data (Array of Objects) ---
 const services = [
@@ -32,7 +34,16 @@ const services = [
     }
 ];
 
-// --- Render Features using forEach ---
+// --- Navigation Data (Array of Objects) ---
+const navLinks = [
+    { label: "Home", href: "#hero" },
+    { label: "Services", href: "#features"},
+    { label: "Book", href: "#cta"},
+    { label: "Contact", href: "#footer"},
+];
+
+/*
+// --- Render Features using forEach (Disabled to utilizie map() ---
 const renderFeatures = () => {
     if (!featureGrid) return;
     services.forEach((service) => {
@@ -45,8 +56,60 @@ const renderFeatures = () => {
         featureGrid.appendChild(card);
     });
 };
+*/
+
+// --- Render Features using map() ---
+const renderFeaturesMap = () => {
+    const cardsHTML = services.map((service) => {
+        return `
+        <article class="feature-card">
+            <img src="${service.image}" alt="${service.title}" class="feature-img" />
+            <h3 class="feature-title">${service.title}</h3>
+            <p class="feature-text">${service.text}</p>
+        </article>
+        `;
+    }).join("");
+
+    featureGrid.innerHTML = cardsHTML;
+};
+
+// --- Render Navigation using map() ---
+const renderNavigation = () => {
+    // Desktop Navigation Links
+    if (nav) {
+        const navHTML = navLinks.map((link) => {
+            return `
+            <a href="${link.href}" class="nav-link">${link.label}</a>
+            `;
+        }).join("");
+
+        nav.innerHTML = navHTML;
+    }
+
+    // Mobile Nav
+    if (mobileMenu) {
+        const mobileHTML = navLinks.map((link) => {
+            return `
+            <a href="${link.href}" class="mobile-link">${link.label}</a>
+            `;
+        }).join("");
+
+        mobileMenu.innerHTML = mobileHTML;
+    }
+
+}
 
 // --- Helpers / Functions ---
+
+const handleHeaderOnScroll = () => {
+    if (!siteHeader) return;
+    if (window.scrollY > 10) {
+        siteHeader.classList.add("is-scrolled");
+    } else {
+        siteHeader.classList.remove("is-scrolled");
+    }
+};
+
 // Updates footer year automatically
 const setCurrentYear = () => {
     const now = new Date();
@@ -80,6 +143,7 @@ const updateHeadingText = (newText) => {
 };
 
 // --- Event Listeners ----
+
 // 1) Set year on page load
 setCurrentYear();
 
@@ -119,4 +183,11 @@ if (callBtn) {
         }
     });
 }
-renderFeatures();
+
+// 6) Changes header behavior on scroll
+window.addEventListener("scroll", handleHeaderOnScroll);
+
+//renderFeatures(); disabled to utilize map() rendering
+renderFeaturesMap();
+renderNavigation();
+handleHeaderOnScroll();
