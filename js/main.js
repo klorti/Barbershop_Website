@@ -28,110 +28,110 @@ const serviceModalList = document.getElementById("serviceModalList");
 
 // --- Services Data (Array of Objects) ---
 const services = [
-    {
-        id: 1,
-        title: "Classic Haircut",
-        image: "assets/images/feature-1.jpg",
-        alt: "Classic haircut",
-        description: "Timeless cuts with modern precision-tailored to your style.",
-        price: 25,
-        popular: true,
-        details: [
-            "Consultation with your barber before the cut begins.",
-            "Hair sectioning and shape-up based on your preferred style.",
-            "Professional clippers, trimmers, and shears used for precision.",
-            "Neckline cleanup and finishing touches included.",
-            "Light styling product applied for a clean final look.",
-        ],
-    },
-    {
-        id: 2,
-        title: "Beard Trim",
-        image: "assets/images/feature-4.jpeg",
-        alt: "Beard Trim",
-        description: "Shape, line-up, and refine your beard for a clean finish.",
-        price: 15,
-        popular: false,
-        details: [
-            "Beard assessment and shaping based on face structure.",
-            "Line-up around cheeks, jawline, and neckline.",
-            "Trimmers and detail tools used for crisp edges.",
-            "Conditioning beard product may be applied for softness.",
-            "Final symmetry check for a polished finish.",
-        ],
-    },
-    {
-        id: 3,
-        title: "Straight Razor Shave",
-        image: "assets/images/feature-3.jpg",
-        alt: "Straight razor shave",
-        description: "Hot towel, smooth shave, and classic barbershop experience.",
-        price: 30,
-        popular: true,
-        details: [
-            "Hot towel prep to soften facial hair and open pores.",
-            "Premium shaving cream or lather applied to protect the skin.",
-            "Straight razor shave performed with careful detailing.",
-            "Second hot towel may be used for comfort and cleanup.",
-            "Aftershave or soothing skin product applied after service.",
-        ],
-    },
-    {
-        id: 4,
-        title: "Fade & Style",
-        image: "assets/images/feature-2.jpg",
-        alt: "Fade haircut",
-        description: "A clean fade with finishing detail for a sharp, modern look.",
-        price: 35,
-        popular: false,
-        details: [
-            "Style consultation before clipper work begins.",
-            "Fade blended to your preferred level and finish.",
-            "Detailing around temples, neckline, and beard area if needed.",
-            "Scissors and clipper-over-comb may be used for texture.",
-            "Styling product added to complete the final look.",
-        ],
-    },
-    {
-        id: 5,
-        title: "Kids Cut",
-        image: "assets/images/feature-1.jpg",
-        alt: "Kids haircut",
-        description: "Clean, comfortable haircut service for younger clients.",
-        price: 20,
-        popular: false,
-        details: [
-            "Simple consultation with child and parent if needed.",
-            "Age-appropriate haircut with comfort in mind.",
-            "Careful clipper and scissor work for a clean finish.",
-            "Light cleanup around the neckline and ears.",
-            "Styled neatly before leaving the chair.",
-        ],
-    },
-    {
-        id: 6,
-        title: "Head Shave",
-        image: "assets/images/feature-1.jpg",
-        alt: "Head shave",
-        description: "Smooth head shave with classic barbershop treatment.",
-        price: 28,
-        popular: true,
-        details: [
-            "Scalp prep with warm towel treatment.",
-            "Protective shave product applied before razor work.",
-            "close shave performed for a smooth finish.",
-            "Scalp cleaned and checked for even consistency.",
-            "Moisturizing scalp product applied after the shave.",
-        ],
-    },
+  {
+    id: 1,
+    title: "Classic Haircut",
+    image: "assets/images/feature-1.jpg",
+    alt: "Classic haircut",
+    description: "Timeless cuts with modern precision-tailored to your style.",
+    price: 25,
+    popular: true,
+    details: [
+      "Consultation with your barber before the cut begins.",
+      "Hair sectioning and shape-up based on your preferred style.",
+      "Professional clippers, trimmers, and shears used for precision.",
+      "Neckline cleanup and finishing touches included.",
+      "Light styling product applied for a clean final look.",
+    ],
+  },
+  {
+    id: 2,
+    title: "Beard Trim",
+    image: "assets/images/feature-4.jpeg",
+    alt: "Beard Trim",
+    description: "Shape, line-up, and refine your beard for a clean finish.",
+    price: 15,
+    popular: false,
+    details: [
+      "Beard assessment and shaping based on face structure.",
+      "Line-up around cheeks, jawline, and neckline.",
+      "Trimmers and detail tools used for crisp edges.",
+      "Conditioning beard product may be applied for softness.",
+      "Final symmetry check for a polished finish.",
+    ],
+  },
+  {
+    id: 3,
+    title: "Straight Razor Shave",
+    image: "assets/images/feature-3.jpg",
+    alt: "Straight razor shave",
+    description: "Hot towel, smooth shave, and classic barbershop experience.",
+    price: 30,
+    popular: true,
+    details: [
+      "Hot towel prep to soften facial hair and open pores.",
+      "Premium shaving cream or lather applied to protect the skin.",
+      "Straight razor shave performed with careful detailing.",
+      "Second hot towel may be used for comfort and cleanup.",
+      "Aftershave or soothing skin product applied after service.",
+    ],
+  },
+  {
+    id: 4,
+    title: "Fade & Style",
+    image: "assets/images/feature-2.jpg",
+    alt: "Fade haircut",
+    description: "A clean fade with finishing detail for a sharp, modern look.",
+    price: 35,
+    popular: false,
+    details: [
+      "Style consultation before clipper work begins.",
+      "Fade blended to your preferred level and finish.",
+      "Detailing around temples, neckline, and beard area if needed.",
+      "Scissors and clipper-over-comb may be used for texture.",
+      "Styling product added to complete the final look.",
+    ],
+  },
+  {
+    id: 5,
+    title: "Kids Cut",
+    image: "assets/images/feature-1.jpg",
+    alt: "Kids haircut",
+    description: "Clean, comfortable haircut service for younger clients.",
+    price: 20,
+    popular: false,
+    details: [
+      "Simple consultation with child and parent if needed.",
+      "Age-appropriate haircut with comfort in mind.",
+      "Careful clipper and scissor work for a clean finish.",
+      "Light cleanup around the neckline and ears.",
+      "Styled neatly before leaving the chair.",
+    ],
+  },
+  {
+    id: 6,
+    title: "Head Shave",
+    image: "assets/images/feature-1.jpg",
+    alt: "Head shave",
+    description: "Smooth head shave with classic barbershop treatment.",
+    price: 28,
+    popular: true,
+    details: [
+      "Scalp prep with warm towel treatment.",
+      "Protective shave product applied before razor work.",
+      "close shave performed for a smooth finish.",
+      "Scalp cleaned and checked for even consistency.",
+      "Moisturizing scalp product applied after the shave.",
+    ],
+  },
 ];
 
 // --- Navigation Data (Array of Objects) ---
 const navLinks = [
-    { label: "Home", href: "#hero" },
-    { label: "Services", href: "#features"},
-    { label: "Book", href: "#cta"},
-    { label: "Contact", href: "#footer"},
+  { label: "Home", href: "#hero" },
+  { label: "Services", href: "#features" },
+  { label: "Book", href: "#cta" },
+  { label: "Contact", href: "#footer" },
 ];
 
 /*
@@ -152,50 +152,58 @@ const renderFeatures = () => {
 
 // --- Render Features using map() ---
 const renderFeaturesMap = () => {
-    const cardsHTML = services.map((service) => {
-        return `
+  const cardsHTML = services
+    .map((service) => {
+      return `
         <article class="feature-card">
             <img src="${service.image}" alt="${service.title}" class="feature-img" />
             <h3 class="feature-title">${service.title}</h3>
             <p class="feature-text">${service.text}</p>
         </article>
         `;
-    }).join("");
+    })
+    .join("");
 
-    featureGrid.innerHTML = cardsHTML;
+  featureGrid.innerHTML = cardsHTML;
 };
 
 // --- Render Navigation using map() ---
 const renderNavigation = () => {
-    // Desktop Navigation Links
-    if (nav) {
-        const navHTML = navLinks.map((link) => {
-            return `
+  // Desktop Navigation Links
+  if (nav) {
+    const navHTML = navLinks
+      .map((link) => {
+        return `
             <a href="${link.href}" class="nav-link">${link.label}</a>
             `;
-        }).join("");
+      })
+      .join("");
 
-        nav.innerHTML = navHTML;
-    }
+    nav.innerHTML = navHTML;
+  }
 
-    // Mobile Navigation links
-    if (mobileMenu) {
-        const mobileHTML = navLinks.map((link) => {
-            return `
+  // Mobile Navigation links
+  if (mobileMenu) {
+    const mobileHTML = navLinks
+      .map((link) => {
+        return `
             <a href="${link.href}" class="mobile-link">${link.label}</a>
             `;
-        }).join("");
+      })
+      .join("");
 
-        mobileMenu.innerHTML = mobileHTML;
-    }
-
+    mobileMenu.innerHTML = mobileHTML;
+  }
 };
 
 const renderServices = () => {
-    if (!featureGrid) return;
-    const servicesHTML = services.map((service) => {
-        const badgeHTML = service.popular ? `<p class="service-badge">Popular Choice</p>`: `<p class="service-badge alt-badge">Barber Favorite</p>`;
-        return `
+  if (!featureGrid) return;
+  const servicesHTML = services
+    .map((service) => {
+      const badgeHTML = service.popular
+        ? `<p class="service-badge">Popular Choice</p>`
+        : `<p class="service-badge alt-badge">Barber Favorite</p>`;
+      return `
         <article class="feature-card">
         <img src="${service.image}" alt="${service.alt}" class="feature-img"/>
         <h3 class="feature-title">${service.title}</h3>
@@ -207,87 +215,165 @@ const renderServices = () => {
         </div>
         </article>
         `;
-    }).join("");
-    featureGrid.innerHTML = servicesHTML;
+    })
+    .join("");
+  featureGrid.innerHTML = servicesHTML;
 };
+
+// Renders Business Hours
+const renderHours = () => {
+    if (!hoursList) return;
+    hoursList.innerHTML = businessHours.map((item) => {
+        if (item.open === 0 && item.close === 0) {
+            return `<li>${item.day}: Closed</li>`;
+        }
+        return `<li>${item.day}: ${formatHour(item.open)} - ${formatHour(item.close)}</li>`;
+    })
+    .join("");
+};
+
+const renderContactInfo = () => {
+    if (phoneLink) {
+        phoneLink.textContent = shopInfo.phoneDisplay;
+        phoneLink.href = `tel:${shopInfo.phoneRaw}`;
+    }
+    if (addressLink) {
+        addressLink.textContent = shopInfo.address;
+        addressLink.href = "#";
+    }
+    if (emailLink) {
+        emailLink.textContent = shopInfo.email;
+        emailLink.href = `mailto:${shopInfo.email}`;
+    }
+};
+
+// --- Main Shop Object ---
+const shopInfo = {
+    name: "Vintage Barbershop",
+    address: "123 Main St, Your City",
+    phoneDisplay: "(555) 123-4567",
+    phoneRaw: "5551234567",
+    email: "hello@vintagebarbershop.com",
+};
+
+// --- Hours Data ---
+const businessHours = [
+    {day: "Monday", open: 9, close: 19},
+    {day: "Tuesday", open: 9, close: 19},
+    {day: "Wednesday", open: 9, close: 19},
+    {day: "Thursday", open: 9, close: 19},
+    {day: "Friday", open: 9, close: 19},
+    {day: "Saturday", open: 10, close: 17},
+    {day: "Sunday", open: 0, close: 0},
+];
 
 // --- Helpers / Functions ---
 
 const handleHeaderOnScroll = () => {
-    if (!siteHeader) return;
-    if (window.scrollY > 10) {
-        siteHeader.classList.add("is-scrolled");
-    } else {
-        siteHeader.classList.remove("is-scrolled");
-    }
+  if (!siteHeader) return;
+  if (window.scrollY > 10) {
+    siteHeader.classList.add("is-scrolled");
+  } else {
+    siteHeader.classList.remove("is-scrolled");
+  }
 };
 
 // Updates footer year automatically
 const setCurrentYear = () => {
-    const now = new Date();
-    yearEl.textContent = now.getFullYear();
+  const now = new Date();
+  yearEl.textContent = now.getFullYear();
+};
+
+// Display Hours
+const formatHour = (hour) => {
+    if (hour === 0) return "Closed"; // safety net - never seen by user
+    if (hour === 12) return "12pm";
+    if (hour > 12) return `${hour -12}pm`;
+    return `${hour}am`;
 };
 
 // Toggle mobile menu open/close
 let isMenuOpen = false;
 const toggleMobileMenu = () => {
-    if (!mobileMenu) return; // Guard clause - bypasses function if mobile menu is not open
-    if (isMenuOpen === false) {
-        mobileMenu.classList.add("is-open");
-        isMenuOpen = true;
-    } else {
-        mobileMenu.classList.remove("is-open");
-        isMenuOpen = false;
-    }
+  if (!mobileMenu) return; // Guard clause - bypasses function if mobile menu is not open
+  if (isMenuOpen === false) {
+    mobileMenu.classList.add("is-open");
+    isMenuOpen = true;
+  } else {
+    mobileMenu.classList.remove("is-open");
+    isMenuOpen = false;
+  }
 };
 
 // Close mobile menu (used when a link is clicked)
 const closeMobileMenu = () => {
-    if (!mobileMenu) return;
-    mobileMenu.classList.remove("is-open");
-    isMenuOpen = false;
+  if (!mobileMenu) return;
+  mobileMenu.classList.remove("is-open");
+  isMenuOpen = false;
 };
 
 // Reusable function with parameters (practice pattern)
 const updateHeadingText = (newText) => {
-    if (!heading) return;
-    heading.textContent = newText;
+  if (!heading) return;
+  heading.textContent = newText;
 };
 const updateSubtext = (newText) => {
-    if (!heroSubtext) return;
-    heroSubtext.textContent = newText;
+  if (!heroSubtext) return;
+  heroSubtext.textContent = newText;
 };
 
 // --- Modal Logic ---
 const openServiceModal = (serviceId) => {
-    if (
-        !serviceModal ||
-        !serviceModalTitle ||
-        !serviceModalPrice ||
-        !serviceModalList
-    )
+  if (
+    !serviceModal ||
+    !serviceModalTitle ||
+    !serviceModalPrice ||
+    !serviceModalList
+  )
     return;
 
-    // find() iterates through the array and grabs the first matching object in this case it's based on the service.id number
-    const selectedService = services.find(
-        (service) => service.id === Number(serviceId), // number() takes the string that is returned from the serviceId(line ~410) and converts it back to a number
-    );
-    if (!selectedService) return;
-    serviceModalTitle.textContent = selectedService.title;
-    serviceModalPrice.textContent = `$${selectedService.price}`;
-    serviceModalList.innerHTML = selectedService.details.map((detail) => `<li>${detail}</li>`).join("");
-    serviceModal.classList.add("is-open");
-    serviceModal.setAttribute("aria-hidden", "false");
-    document.body.style.overflow = "hidden";
+  // find() iterates through the array and grabs the first matching object in this case it's based on the service.id number
+  const selectedService = services.find(
+    (service) => service.id === Number(serviceId), // number() takes the string that is returned from the serviceId(line ~410) and converts it back to a number
+  );
+  if (!selectedService) return;
+  serviceModalTitle.textContent = selectedService.title;
+  serviceModalPrice.textContent = `$${selectedService.price}`;
+  serviceModalList.innerHTML = selectedService.details
+    .map((detail) => `<li>${detail}</li>`)
+    .join("");
+  serviceModal.classList.add("is-open");
+  serviceModal.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
 };
 const closeServiceModal = () => {
-    if (!serviceModal) return;
-    serviceModal.classList.remove("is-open");
-    serviceModal.setAttribute("aria-hidden", "true");
-    document.body.style.overflow = "";
+  if (!serviceModal) return;
+  serviceModal.classList.remove("is-open");
+  serviceModal.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
 };
 
-
+// --- Open / Closed Logic ---
+const checkIfOpen = () => {
+    const now = new Date();
+    const currentDay = now.getDay();
+    const currentHour = now.getHours();
+    let schedule; // we can't initialize it in the declaration itself since there's no single expression that covers both branches without repeating the conditional
+    if (currentDay === 0) { // schedules' value comes as a reult of a condition so we don't give it a value to begin with.
+        schedule = businessHours[6]; // businessHours array lists sunday as the 6th index
+    } else {
+        schedule = businessHours[currentDay - 1]; // currentDay comes from the now.getDay() which shows monday as 1 but it needs to be shifted to 0 for human understanding
+    }
+    if (schedule.open === 0 && schedule.close === 0) { // .open comes from the businessHours array
+        updateSubtext("We are closed today. Book now for your next sharp look.");
+        return;
+    }
+    if (currentHour >= schedule.open && currentHour < schedule.close) {
+        updateSubtext("We're open right now - walk-ins welcome, appointments recommended.");
+    } else {
+        updateSubtext("We're currently closed, but you can still book your next appointment.");
+    }
+};
 // --- Event Listeners ----
 
 // 1) Set year on page load
@@ -295,60 +381,73 @@ setCurrentYear();
 
 // 2) Hamburger toggle menu
 if (menuBtn) {
-    menuBtn.addEventListener("click", () => {
-        toggleMobileMenu();
-    });
+  menuBtn.addEventListener("click", () => {
+    toggleMobileMenu();
+  });
 }
 
 // 3) Close mobile menu when a mobile link is clicked (event delegation)
 if (mobileMenu) {
-    mobileMenu.addEventListener("click", (event) => {
-        // If they clicked an <a> inside the mneu, close it
-        if (event.target.tagName === "A") { // event represents what was triggered, target is what was triggered, tagName is the specific element name that was targeted
-            closeMobileMenu();
-        }
-    });
+  mobileMenu.addEventListener("click", (event) => {
+    // If they clicked an <a> inside the mneu, close it
+    if (event.target.tagName === "A") {
+      // event represents what was triggered, target is what was triggered, tagName is the specific element name that was targeted
+      closeMobileMenu();
+    }
+  });
 }
 
 // 4) CTA Button: "Book Now" (placeholder behavior)
 if (ctaBtn) {
-    ctaBtn.addEventListener("click", () => {
-        updateHeadingText("Booking coming next - great choice!");
-    });
+  ctaBtn.addEventListener("click", () => {
+    updateHeadingText("Booking coming next - great choice!");
+  });
 }
 
 // 5) Call Button: try to use the phone number in the footer
 if (callBtn) {
-    callBtn.addEventListener("click", () => {
-        // If you later set phoneLink href to tel:, this will work perfectly.
-        // For now, this is a beginner-friendly placeholder.
-        if (phoneLink) {
-            updateHeadingText("Call us at " + phoneLink.textContent);
-        } else {
-            updateHeadingText("Call feature coming next!");
-        }
-    });
+  callBtn.addEventListener("click", () => {
+    // If you later set phoneLink href to tel:, this will work perfectly.
+    // For now, this is a beginner-friendly placeholder.
+    if (phoneLink) {
+      updateHeadingText("Call us at " + phoneLink.textContent);
+    } else {
+      updateHeadingText("Call feature coming next!");
+    }
+  });
 }
-/*
+
 // 6) Modals Button open and close
 if (featureGrid) {
-    featureGrid.addEventListener("click", (event) => {
-        const clickedButton = event.target.closes(".service-details-btn");
-        if (!clickedButton) return;
-        const serviceId = clickedButton.dataset.serviceId;
-        openServiceModal(serviceId);
-    });
+  featureGrid.addEventListener("click", (event) => {
+    const clickedButton = event.target.closest(".service-details-btn");
+    if (!clickedButton) return;
+    const serviceId = clickedButton.dataset.serviceId; // All dataset values are strings, no matter what's in HTML
+    openServiceModal(serviceId);
+  }); // dataset is a built in property every DOM element has, .dataset accesses the attributes of an element
 }
-if ()
-*/
-// 6) Changes header behavior on scroll
+if (serviceModalClose) {
+  serviceModalClose.addEventListener("click", closeServiceModal);
+} // listens for a click on the btn with the 'x' to close the modal
+if (serviceModalOverlay) {
+  serviceModalOverlay.addEventListener("click", closeServiceModal);
+} // clicking anywhere outside of the modal will close it
+document.addEventListener("keydown", (event) => {
+  //keydown is also triggered by 'esc' on keyboard
+  if (event.key === "Escape") {
+    // specifying the only key (outside of a click) to close the modal is 'esc'
+    closeServiceModal();
+  }
+});
+
+// 7) Changes header behavior on scroll
 window.addEventListener("scroll", handleHeaderOnScroll);
 
-//renderFeatures(); disabled to utilize map() rendering
-renderFeaturesMap();
+// renderFeatures(); disabled to utilize map() rendering
+// renderFeaturesMap();
 renderNavigation();
 handleHeaderOnScroll();
 renderServices();
+checkIfOpen();
 renderHours();
 renderContactInfo();
-checkIfOpen();
